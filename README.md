@@ -35,6 +35,7 @@ Para ejecutar el tema en un servidor local, sigue estos pasos:
 ```bash
 git clone https://github.com/piharpi/jekyll-klise.git
 cd jekyll-klise
+bundle config set force_ruby_platform true
 bundle install
 bundle exec jekyll serve
 ```
