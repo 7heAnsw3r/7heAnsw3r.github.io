@@ -1,8 +1,9 @@
 # Site settings
 title: 7heAnsw3r
 description: >-
-  Join me as I dive into the realms of cybersecurity and ethical hacking. 
-  Discover write-ups, vulnerabilities, and hands-on insights on <a href="https://github.com/7heAnsw3r" target="_blank" rel="noopener">@GitHub</a>.
+  Join me on an exciting journey into the world of cybersecurity and ethical hacking. 
+  Explore detailed write-ups, uncover vulnerabilities, and gain hands-on insights 
+  at <a href="https://github.com/7heAnsw3r" target="_blank" rel="noopener">@GitHub</a>.
 lang: en-US
 timezone: America/Guayaquil
 image: assets/img/Avatar_hacker.png

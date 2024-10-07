@@ -1,61 +1,59 @@
-# Klisé
+Entendido. Aquí tienes un nuevo README que mejora el contenido del tema Klisé, dando crédito al creador, pero adaptado a tu estilo y propósito:
 
-Klisé is minimalist Jekyll theme for running a personal site and blog running on Jekyll.<br>
-For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now.sh</a>
+```markdown
+# 7heAnsw3r - Klisé
 
-## Features
+**Klisé** es un tema minimalista de Jekyll, creado por [piharpi](https://github.com/piharpi), que permite construir un sitio personal y un blog de manera sencilla y elegante. Este proyecto está inspirado en la necesidad de compartir conocimientos y experiencias en el ámbito de la ciberseguridad y el hacking ético.
 
-- [x] Light & Dark Mode support :waxing_crescent_moon:
-- [x] Customizable (using `.scss`)
-- [x] Responsive (desktop, tab and mobile)
-- [x] Mobile First Design
-- [x] SEO Optimized
-- [x] Images of post Organized ([`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles))
-- [x] Generate Sitemap ([`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap))
-- [x] RSS Feed ([`jekyll-feed`](https://github.com/jekyll/jekyll-feed))
-- [x] Syntax Highlighter ([`rouge`](https://github.com/rouge-ruby/rouge))
-- [x] Next & Previous Post
-- [x] Comment layout, enable in frontmatter if you wish
-- [x] Google analytics
-- [x] HTML Minify ([`jekyll-compress-html`](https://github.com/penibelst/jekyll-compress-html))
-- [x] W3C **Validated**
-- [x] Lighthouse and PageSpeed **Passed**
+## 🌐 Demostración
+Puedes ver una demostración del tema en [klise.now.sh](https://klise.now.sh).
 
-![Lighthouse Result](./lighthouse.png)
+## ✨ Características
+- **Modos Claro y Oscuro** 🌒
+- **Totalmente Personalizable** (usando .scss)
+- **Diseño Responsive** (optimizado para escritorio, tabletas y móviles)
+- **Mobile First Design**
+- **Optimizado para SEO**
+- **Organización de Imágenes de Publicaciones** (jekyll-postfiles)
+- **Generación de Sitemap** (jekyll-sitemap)
+- **Feed RSS** (jekyll-feed)
+- **Resaltado de Sintaxis** (rouge)
+- **Navegación Sencilla entre Publicaciones** (anterior/siguiente)
+- **Sistema de Comentarios** (habilitable en frontmatter)
+- **Integración con Google Analytics**
+- **Minificación de HTML** (jekyll-compress-html)
+- **Validado por W3C**
+- **Aprobado por Lighthouse y PageSpeed**
 
-## Backlogs
+## 🚧 Pendientes
+- Integrar **PhotoSwipe** para la visualización de imágenes.
+- Añadir **meta información schema.org** para un mejor SEO.
+- Transformar el selector de clases a **metodología BEM**.
 
-- [ ] Intergrated with PhotoSwipe.
-- [ ] Add schema.org meta information.
-- [ ] Transform class selector to BEM metodology.
-
-## Installation
-
-Run local server:
+## 🛠 Instalación
+Para ejecutar el tema en un servidor local, sigue estos pasos:
 
 ```bash
-$ git clone https://github.com/piharpi/jekyll-klise.git
-$ cd jekyll-klise
-$ bundle install
-$ bundle exec jekyll serve
+git clone https://github.com/piharpi/jekyll-klise.git
+cd jekyll-klise
+bundle install
+bundle exec jekyll serve
 ```
 
-Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
+Accede a `localhost:4000` en tu navegador. ¡Ahora puedes empezar a personalizarlo!
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/piharpi/jekyll-klise) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/piharpi/jekyll-klise) [![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-0000-jopapa#create/Microsoft.StaticApp)
+## ⚠ Limitaciones
+Ten en cuenta que el plugin **jekyll-postfiles** no es compatible con GitHub Pages. Esto puede causar problemas como rutas rotas o imágenes de publicaciones que no se cargan. Como alternativa, puedes usar servicios como **netlify.com**, **vercel.com**, **azure.com** o **surge.sh**, que son compatibles con terceros.
 
-## Limitation
+## 🤝 Contribuciones
+Si encuentras errores tipográficos o de formato, o deseas ayudar a mejorar el tema, ¡no dudes en abrir un pull request! Por favor, revisa la guía de contribuciones antes de hacerlo.
 
-- Since [`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles#compatibility) plugin isn't supported by github pages, this cause will make your site problems, path broken or post images won't show up, you can host alternatively using likes [netlify.com](https://netlify.com), [vercel.com](https://vercel.com), [azure.com](https://docs.microsoft.com/azure/static-web-apps/publish-jekyll) or [surge.sh](https://surge.sh) services, which support 3rd party.
+## 📜 Licencia
+Este proyecto es de código abierto y se encuentra bajo la Licencia MIT. 
+```
 
-## Contributing
+### Notas:
+- Este README reconoce la autoría del creador original, mientras se adapta para que sea parte de tu proyecto personal.
+- Se mantiene la estructura de secciones y se mejora el lenguaje para que refleje tu enfoque.
 
-If you see any typos or formatting errors in a post, or want to helping reduce backlogs or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
-
-Yeaaa feel free to open a pull request.
-## Support
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W7MJ4X) [![saweria.co](./assets/img/saweria-button.png)](https://saweria.co/piharpi)
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+Si quieres hacer más cambios o ajustes, ¡házmelo saber!

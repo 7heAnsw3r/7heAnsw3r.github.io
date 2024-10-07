@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md"
+                "file": "README.md"
               }
             }
           }
@@ -149,6 +149,13 @@
   },
   "active": "0d653aec0f570166",
   "lastOpenFiles": [
+    "lighthouse.png",
+    "about.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "index.md",
+    "README.md",
+    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
     "_site/assets/img/Freelancer/imagen9.png",
     "_site/assets/img/Freelancer/imagen8.png",
     "_site/assets/img/Freelancer/imagen74.png",
@@ -158,14 +165,11 @@
     "_site/assets/img/Freelancer/imagen70.png",
     "_site/assets/img/Freelancer/imagen7.png",
     "_site/assets/img/Freelancer/imagen69.png",
-    "_site/assets/img/Freelancer/imagen68.png",
-    "_site/assets/img/Freelancer/imagen67.png",
     "_site/assets/img/Freelancer/script.sh",
     "assets/img/Freelancer/script.sh",
     "_site/assets/img/Freelancer",
     "assets/img/Freelancer",
     "_posts/apa-itu-shell/2020-01-25-apa-itu-shell.md",
-    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
     "_site/HTB-Freelancer-WriteUp/index.html",
     "_site/HTB-Freelancer-WriteUp",
     "_site/Cybersecurity-in-Latin-America/index.html",
@@ -177,13 +181,8 @@
     "_posts/react-component-with-dot-notation/2018-04-07-react-component-with-dot-notation.md",
     "_posts/cara-memperbarui-fork-repository/2020-01-29-cara-memperbarui-fork-repository.md",
     "_posts/maths-example/2021-06-17-maths-example.md",
-    "CODE_OF_CONDUCT.md",
-    "about.md",
     "_site/about.md",
     "404.md",
-    "CONTRIBUTING.md",
-    "index.md",
-    "README.md",
     "thanks.md",
     "_posts/Prueba/2024-10-06-Prueba.md",
     "_site/2024-10-06.md",
