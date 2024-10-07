@@ -1,5 +1,5 @@
 
-```markdown
+
 # 7heAnsw3r - Klisé
 
 **Klisé** es un tema minimalista de Jekyll, creado por [piharpi](https://github.com/piharpi), que permite construir un sitio personal y un blog de manera sencilla y elegante. Este proyecto está inspirado en la necesidad de compartir conocimientos y experiencias en el ámbito de la ciberseguridad y el hacking ético.
@@ -39,6 +39,7 @@ bundle config set force_ruby_platform true
 bundle install
 bundle exec jekyll serve
 ```
+
 
 Accede a `localhost:4000` en tu navegador. ¡Ahora puedes empezar a personalizarlo!
 
