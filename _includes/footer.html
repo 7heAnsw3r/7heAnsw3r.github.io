@@ -1,36 +1,31 @@
-<footer class="footer">
-  <a class="footer_item" href="/thanks">ack.</a>
-  <a class="footer_item" href="javascript::void(0)">resume</a>
-  <a class="footer_item" href="/feed.xml">rss</a>
-  <span class="footer_item">&copy; {{ site.time | date: "%Y" }}</span>
+<footer class="footer" style="font-size: 0.8em; text-align: center;">
+  <p>
+    &copy; {{ site.time | date: "%Y" }} 7heAnsw3r. 
+    <br> 
+    Cybersecurity enthusiast 🔐 | eJPT certified 🎓 | CPTS in progress 🛡️ 
+    <br>
+    <a class="footer_item" href="/thanks">Acknowledgments</a>
+  </p>
   <small class="footer_copyright">
-    <!-- Klisé Theme: https://github.com/piharpi/jekyll-klise -->
-    <a
-      href="https://github.com/piharpi/jekyll-klise"
-      target="_blank"
-      rel="noreferrer noopener"
-      >klisé</a
-    >
-    theme on
-    <a href="https://jekyllrb.com" target="_blank" rel="noreferrer noopener"
-      >jekyll</a
-    >
+    <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noreferrer noopener">Klisé</a> theme based on 
+    <a href="https://jekyllrb.com" target="_blank" rel="noreferrer noopener">Jekyll</a>.
+    <br>
+    <a href="https://www.flaticon.es/iconos-gratis/hacker" title="Hacker iconos" target="_blank" rel="noopener">
+      Hacker iconos creados por Flat Icons - Flaticon
+    </a>
   </small>
 </footer>
+
 <script src="/assets/js/main.js" defer="defer"></script>
 {%- if site.google_analytics -%}
   <!-- Google tag (gtag.js) -->
-  <script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
-  ></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "{{ site.google_analytics }}");
   </script>
 {%- endif -%}

@@ -3,7 +3,7 @@ title: Archive
 permalink: /archive/
 layout: page
 excerpt: All post.
-comments: false
+comments: true
 ---
 
 <div class="search-article">

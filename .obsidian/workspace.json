@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "39f5a472b1ee8d4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "747a51ea1424ba6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d653aec0f570166",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48fc9ab4defcfc84",
+    "type": "split",
+    "children": [
+      {
+        "id": "afbc13460d017f39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9e0ad7d23dc9b77",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ae89a1afd1367f49",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:prueba",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "011726744a7c8b19",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "251b51e65ff9bc18",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6201aa721fa5f6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f33c132c3e4288c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "65f20e464857b485",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fd295244c9addf17",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "06cd580e1fc219cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "0d653aec0f570166",
+  "lastOpenFiles": [
+    "_site/assets/img/Freelancer/imagen9.png",
+    "_site/assets/img/Freelancer/imagen8.png",
+    "_site/assets/img/Freelancer/imagen74.png",
+    "_site/assets/img/Freelancer/imagen73.png",
+    "_site/assets/img/Freelancer/imagen72.png",
+    "_site/assets/img/Freelancer/imagen71.png",
+    "_site/assets/img/Freelancer/imagen70.png",
+    "_site/assets/img/Freelancer/imagen7.png",
+    "_site/assets/img/Freelancer/imagen69.png",
+    "_site/assets/img/Freelancer/imagen68.png",
+    "_site/assets/img/Freelancer/imagen67.png",
+    "_site/assets/img/Freelancer/script.sh",
+    "assets/img/Freelancer/script.sh",
+    "_site/assets/img/Freelancer",
+    "assets/img/Freelancer",
+    "_posts/apa-itu-shell/2020-01-25-apa-itu-shell.md",
+    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+    "_site/HTB-Freelancer-WriteUp/index.html",
+    "_site/HTB-Freelancer-WriteUp",
+    "_site/Cybersecurity-in-Latin-America/index.html",
+    "_site/Cybersecurity-in-Latin-America",
+    "_site/Cybersecurity-in-LatinAmerica/index.html",
+    "_site/Cybersecurity-in-LatinAmerica",
+    "_posts/python-notes-from-Intro-to-machine-learning/2018-04-14-python-notes-from-Intro-to-machine-learning.md",
+    "_posts/welcome-to-jekyll/2020-08-29-welcome-to-jekyll.md",
+    "_posts/react-component-with-dot-notation/2018-04-07-react-component-with-dot-notation.md",
+    "_posts/cara-memperbarui-fork-repository/2020-01-29-cara-memperbarui-fork-repository.md",
+    "_posts/maths-example/2021-06-17-maths-example.md",
+    "CODE_OF_CONDUCT.md",
+    "about.md",
+    "_site/about.md",
+    "404.md",
+    "CONTRIBUTING.md",
+    "index.md",
+    "README.md",
+    "thanks.md",
+    "_posts/Prueba/2024-10-06-Prueba.md",
+    "_site/2024-10-06.md",
+    "2024-10-06.md",
+    "_site/apa-itu-shell/Prueba/Prueba.md",
+    "_site/apa-itu-shell/Sin nombre/Prueba.md",
+    "_site/apa-itu-shell/Sin nombre/Sin título.md"
+  ]
+}
