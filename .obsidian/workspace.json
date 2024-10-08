@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "404.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "404.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "404.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "404.md"
               }
             }
           }
@@ -149,14 +149,15 @@
   },
   "active": "0d653aec0f570166",
   "lastOpenFiles": [
-    "google245bd25bf2abe9ed.html",
-    "lighthouse.png",
     "about.md",
     "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.md",
     "index.md",
-    "README.md",
+    "thanks.md",
     "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+    "README.md",
+    "google245bd25bf2abe9ed.html",
+    "lighthouse.png",
+    "CONTRIBUTING.md",
     "_site/assets/img/Freelancer/imagen9.png",
     "_site/assets/img/Freelancer/imagen8.png",
     "_site/assets/img/Freelancer/imagen74.png",
@@ -176,7 +177,6 @@
     "_site/Cybersecurity-in-Latin-America/index.html",
     "_site/Cybersecurity-in-Latin-America",
     "_site/Cybersecurity-in-LatinAmerica/index.html",
-    "_site/Cybersecurity-in-LatinAmerica",
     "_posts/python-notes-from-Intro-to-machine-learning/2018-04-14-python-notes-from-Intro-to-machine-learning.md",
     "_posts/welcome-to-jekyll/2020-08-29-welcome-to-jekyll.md",
     "_posts/react-component-with-dot-notation/2018-04-07-react-component-with-dot-notation.md",
@@ -184,7 +184,6 @@
     "_posts/maths-example/2021-06-17-maths-example.md",
     "_site/about.md",
     "404.md",
-    "thanks.md",
     "_posts/Prueba/2024-10-06-Prueba.md",
     "_site/2024-10-06.md",
     "2024-10-06.md",
