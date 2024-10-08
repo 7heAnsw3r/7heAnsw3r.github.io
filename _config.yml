@@ -6,7 +6,7 @@ description: >
   Gain hands-on insights and keep up with the latest in hacking and security at <a href="https://7heansw3r.github.io" target="_blank" rel="noopener">7heAnsw3r</a>.
 lang: en-US
 timezone: America/Guayaquil
-image: assets/img/Avatar_hacker.png
+image: /assets/img/Avatar_hacker.png
 repo: https://github.com/7heAnsw3r/7heAnsw3r.github.io
 mode: dark
 
