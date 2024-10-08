@@ -1,34 +1,35 @@
 # Site settings
 title: 7heAnsw3r
-description: >
-  Join me on an exciting journey into the world of cybersecurity and ethical hacking. 
+description: >-
+  Join me on an exciting journey into the world of cybersecurity and ethical hacking.
   Dive into detailed write-ups, explore vulnerabilities, discover zero-days, and share real-world experiences.
-  Gain hands-on insights and keep up with the latest in hacking and security at <a href="https://github.com/7heAnsw3r" target="_blank" rel="noopener">7heAnsw3r</a>.
+  Gain hands-on insights and keep up with the latest in hacking and security at <a href="https://7heansw3r.github.io" target="_blank" rel="noopener">7heAnsw3r</a>.
 lang: en-US
 timezone: America/Guayaquil
-image: /assets/img/Avatar_hacker.png
+image: assets/img/Avatar_hacker.png
 repo: https://github.com/7heAnsw3r/7heAnsw3r.github.io
 mode: dark
 
 # Profile settings
-author: 7heAnsw3r
-name: 7heAnsw3r
-bio: >
-  Cybersecurity enthusiast 🔐 | eJPT certified 🎓 | CPTS in progress 🛡️ | Pursuing Cisco's Ethical Hacker cert 🥷 | Sharing write-ups, vulnerabilities & insights on hacking 🚀
-username: 7heAnsw3r
-github: 7heAnsw3r
-twitter: TheAnsw3r
-linkedin: 4n7hony
-avatar: /assets/img/Avatar_hacker.png
+author: 
+  name: 7heAnsw3r
+  bio: >-
+    Cybersecurity enthusiast 🔐 | eJPT certified 🎓 | CPTS in progress 🛡️ | Pursuing Cisco's Ethical Hacker cert 🥷 | Sharing write-ups, vulnerabilities & insights on hacking 🚀
+  username: 7heAnsw3r
+  github: 7heAnsw3r
+  twitter: TheAnsw3r
+  linkedin: 4n7hony
+  avatar: /assets/img/Avatar_hacker.png
+
 
 # URL settings
-url: "https://7heAnsw3r.github.io"
-# baseurl:
+url: "https://7heAnsw3r.github.io" #
+#baseurl:
 permalink: /:title/
-google_analytics: G-9HB9JG04HN
+google_analytics: G-9HB9JG04HN # leave it blank if not wish
 fb_appid:
 
-# Collection settings
+# Collection setting
 collections:
   posts:
     output: true
@@ -65,9 +66,11 @@ number_of_posts: 5
 # theme: klise
 sass:
   style: compressed
+
 include:
   - _redirects
   - .htaccess
+
 exclude:
   - CNAME
   - Gemfile
