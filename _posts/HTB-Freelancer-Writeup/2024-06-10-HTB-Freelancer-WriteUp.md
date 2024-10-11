@@ -10,7 +10,7 @@ tags:
   - "#BackUp"
   - "#nmap"
   - "#smb"
-description: All the services are free, a source code this site placed on github repository and intergration with netlify service, another service that you can use is github page for hosting your own static site.
+description: '"Freelancer" es una máquina de dificultad alta diseñada para desafiar a los jugadores con vulnerabilidades comunes en pruebas de penetración del mundo real.'
 ---
 ---
 

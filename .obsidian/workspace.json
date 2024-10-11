@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "404.md",
+                "file": "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "404.md",
+                "file": "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "404.md",
+                "file": "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "404.md"
+                "file": "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md"
               }
             }
           }
@@ -149,41 +149,42 @@
   },
   "active": "0d653aec0f570166",
   "lastOpenFiles": [
+    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+    "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
+    "_site/assets/img/Nibbles/imagen9.png",
+    "_site/assets/img/Nibbles/imagen8.png",
+    "_site/assets/img/Nibbles/imagen7.png",
+    "_site/assets/img/Nibbles/imagen6.png",
+    "_site/assets/img/Nibbles/imagen5.png",
+    "_site/assets/img/Nibbles/imagen4.png",
+    "_site/assets/img/Nibbles/imagen3.png",
+    "_site/assets/img/Nibbles/imagen22.png",
+    "_site/assets/img/Nibbles/imagen21.png",
+    "_site/assets/img/Nibbles/imagen20.png",
+    "_site/assets/img/Nibbles/script.sh",
+    "assets/img/Nibbles/script.sh",
+    "_site/assets/img/Nibbles",
+    "assets/img/Nibbles",
+    "_site/HTB-Nibbles-Writeup/index.html",
+    "_site/HTB-Nibbles-Writeup",
+    "404.md",
+    "_posts/HTB-Nibbles-Writeup",
     "about.md",
     "CODE_OF_CONDUCT.md",
     "index.md",
     "thanks.md",
-    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
     "README.md",
     "google245bd25bf2abe9ed.html",
-    "lighthouse.png",
     "CONTRIBUTING.md",
-    "_site/assets/img/Freelancer/imagen9.png",
-    "_site/assets/img/Freelancer/imagen8.png",
-    "_site/assets/img/Freelancer/imagen74.png",
-    "_site/assets/img/Freelancer/imagen73.png",
-    "_site/assets/img/Freelancer/imagen72.png",
-    "_site/assets/img/Freelancer/imagen71.png",
-    "_site/assets/img/Freelancer/imagen70.png",
-    "_site/assets/img/Freelancer/imagen7.png",
-    "_site/assets/img/Freelancer/imagen69.png",
     "_site/assets/img/Freelancer/script.sh",
     "assets/img/Freelancer/script.sh",
-    "_site/assets/img/Freelancer",
-    "assets/img/Freelancer",
     "_posts/apa-itu-shell/2020-01-25-apa-itu-shell.md",
-    "_site/HTB-Freelancer-WriteUp/index.html",
-    "_site/HTB-Freelancer-WriteUp",
-    "_site/Cybersecurity-in-Latin-America/index.html",
-    "_site/Cybersecurity-in-Latin-America",
-    "_site/Cybersecurity-in-LatinAmerica/index.html",
     "_posts/python-notes-from-Intro-to-machine-learning/2018-04-14-python-notes-from-Intro-to-machine-learning.md",
     "_posts/welcome-to-jekyll/2020-08-29-welcome-to-jekyll.md",
     "_posts/react-component-with-dot-notation/2018-04-07-react-component-with-dot-notation.md",
     "_posts/cara-memperbarui-fork-repository/2020-01-29-cara-memperbarui-fork-repository.md",
     "_posts/maths-example/2021-06-17-maths-example.md",
     "_site/about.md",
-    "404.md",
     "_posts/Prueba/2024-10-06-Prueba.md",
     "_site/2024-10-06.md",
     "2024-10-06.md",
