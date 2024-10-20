@@ -18,7 +18,7 @@ Nibbles es una máquina bastante sencilla donde trabajamos con el framework OWAS
 ---
 
 <figure>
-<img src="/assets/img/Nibbles/Nibbles.png" alt="Freelancer">
+<img src="/assets/img/Nibbles/Nibbles.png" alt="Nibbles">
 <figcaption>Fig 1. Nibbles- HTB</figcaption>
 </figure>
 ---

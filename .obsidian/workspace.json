@@ -4,37 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "747a51ea1424ba6f",
+        "id": "dfbecbc91e3783a3",
         "type": "tabs",
         "children": [
           {
-            "id": "0d653aec0f570166",
+            "id": "728b0994632a0328",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
+                "file": "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "d8faf0e670f7dbb9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4daf0e1dda881a55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2024-20-10-HTB-Sauna-Writeup"
             }
           }
         ]
@@ -57,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -66,13 +52,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:prueba",
+                "query": "tag:ASREProast-Attack",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
             }
           },
           {
@@ -80,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
             }
           }
         ]
@@ -103,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +100,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
             }
           },
           {
@@ -120,10 +111,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
             }
           },
           {
@@ -134,7 +126,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
             }
           },
           {
@@ -142,9 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Esquema"
             }
           }
         ],
@@ -165,32 +159,33 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "0d653aec0f570166",
+  "active": "728b0994632a0328",
   "lastOpenFiles": [
     "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
+    "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
+    "_site/assets/img/Sauna/imagen9.png",
+    "_site/assets/img/Sauna/imagen8.png",
+    "_site/assets/img/Sauna/imagen7.png",
+    "_site/assets/img/Sauna/imagen6.png",
+    "_site/assets/img/Sauna/imagen5.png",
+    "_site/assets/img/Sauna/imagen4.png",
+    "_site/assets/img/Sauna/imagen3.png",
+    "_site/assets/img/Sauna/imagen2.png",
+    "_site/assets/img/Sauna/imagen14.png",
+    "_site/assets/img/Sauna/imagen13.png",
+    "_site/assets/img/Sauna/script.sh",
+    "assets/img/Sauna/script.sh",
+    "_site/assets/img/Sauna",
+    "assets/img/Sauna",
+    "_site/HTB-Sauna-Writeup/index.html",
+    "_site/HTB-Sauna-Writeup",
+    "_posts/HTB-Sauna-Writeup",
     "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
     "_site/Permisos-Archivos-Linux/index.html",
     "_site/Permisos-Archivos-Linux",
     "_posts/Permisos-Archivos-Linux",
     "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
-    "_site/assets/img/Nibbles/imagen9.png",
-    "_site/assets/img/Nibbles/imagen8.png",
-    "_site/assets/img/Nibbles/imagen7.png",
-    "_site/assets/img/Nibbles/imagen6.png",
-    "_site/assets/img/Nibbles/imagen5.png",
-    "_site/assets/img/Nibbles/imagen4.png",
-    "_site/assets/img/Nibbles/imagen3.png",
-    "_site/assets/img/Nibbles/imagen22.png",
-    "_site/assets/img/Nibbles/imagen21.png",
-    "_site/assets/img/Nibbles/imagen20.png",
-    "_site/assets/img/Nibbles/script.sh",
-    "assets/img/Nibbles/script.sh",
-    "_site/assets/img/Nibbles",
-    "assets/img/Nibbles",
-    "_site/HTB-Nibbles-Writeup/index.html",
-    "_site/HTB-Nibbles-Writeup",
     "404.md",
-    "_posts/HTB-Nibbles-Writeup",
     "about.md",
     "CODE_OF_CONDUCT.md",
     "index.md",
