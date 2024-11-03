@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dfbecbc91e3783a3",
+        "id": "758bcd0b939e1530",
         "type": "tabs",
         "children": [
           {
-            "id": "728b0994632a0328",
+            "id": "7d47be580a4bdf92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
+                "file": "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-20-10-HTB-Sauna-Writeup"
+              "title": "2024-03-11-Contral-Total-STDOUT"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:ASREProast-Attack",
+                "query": "tag:grep",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,10 +159,18 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "728b0994632a0328",
+  "active": "7d47be580a4bdf92",
   "lastOpenFiles": [
-    "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
+    "_site/Contral-Total-STDOUT/index.html",
+    "_site/Contral-Total-STDOUT",
+    "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
+    "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
     "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
+    "_site/Contral-Total-STDOUT-en-Linux/index.html",
+    "_site/Contral-Total-STDOUT-en-Linux",
+    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+    "_posts/Control Total Stdout en Linux",
+    "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
     "_site/assets/img/Sauna/imagen9.png",
     "_site/assets/img/Sauna/imagen8.png",
     "_site/assets/img/Sauna/imagen7.png",
@@ -179,12 +187,6 @@
     "assets/img/Sauna",
     "_site/HTB-Sauna-Writeup/index.html",
     "_site/HTB-Sauna-Writeup",
-    "_posts/HTB-Sauna-Writeup",
-    "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
-    "_site/Permisos-Archivos-Linux/index.html",
-    "_site/Permisos-Archivos-Linux",
-    "_posts/Permisos-Archivos-Linux",
-    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
     "404.md",
     "about.md",
     "CODE_OF_CONDUCT.md",
