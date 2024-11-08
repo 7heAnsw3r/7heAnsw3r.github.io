@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "758bcd0b939e1530",
+        "id": "fd19a19f3e723135",
         "type": "tabs",
         "children": [
           {
-            "id": "7d47be580a4bdf92",
+            "id": "309c784b4605f23b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
+                "file": "_posts/HTB-Heist_Writeup/2024-08-11-HTB-Heist-Writeup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-03-11-Contral-Total-STDOUT"
+              "title": "2024-08-11-HTB-Heist-Writeup"
             }
           }
         ]
@@ -159,34 +159,34 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "7d47be580a4bdf92",
+  "active": "309c784b4605f23b",
   "lastOpenFiles": [
+    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+    "_posts/HTB-Heist_Writeup/2024-08-11-HTB-Heist-Writeup.md",
+    "_site/assets/img/Heist/Imagen4.png",
+    "_site/assets/img/Heist/Imagen3.png",
+    "_site/assets/img/Heist/Imagen2.png",
+    "_site/assets/img/Heist/Imagen1.png",
+    "assets/img/Heist/Imagen4.png",
+    "assets/img/Heist/Imagen3.png",
+    "assets/img/Heist/Imagen2.png",
+    "assets/img/Heist/Imagen1.png",
+    "_site/assets/img/Heist/Heist.png",
+    "_site/assets/img/Heist",
+    "assets/img/Heist/Heist.png",
+    "assets/img/Heist",
+    "_site/HTB-Heist-Writeup/index.html",
+    "_site/HTB-Heist-Writeup",
+    "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
+    "_posts/HTB-Heist_Writeup",
     "_site/Contral-Total-STDOUT/index.html",
     "_site/Contral-Total-STDOUT",
     "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
-    "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
     "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
     "_site/Contral-Total-STDOUT-en-Linux/index.html",
     "_site/Contral-Total-STDOUT-en-Linux",
-    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
     "_posts/Control Total Stdout en Linux",
     "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
-    "_site/assets/img/Sauna/imagen9.png",
-    "_site/assets/img/Sauna/imagen8.png",
-    "_site/assets/img/Sauna/imagen7.png",
-    "_site/assets/img/Sauna/imagen6.png",
-    "_site/assets/img/Sauna/imagen5.png",
-    "_site/assets/img/Sauna/imagen4.png",
-    "_site/assets/img/Sauna/imagen3.png",
-    "_site/assets/img/Sauna/imagen2.png",
-    "_site/assets/img/Sauna/imagen14.png",
-    "_site/assets/img/Sauna/imagen13.png",
-    "_site/assets/img/Sauna/script.sh",
-    "assets/img/Sauna/script.sh",
-    "_site/assets/img/Sauna",
-    "assets/img/Sauna",
-    "_site/HTB-Sauna-Writeup/index.html",
-    "_site/HTB-Sauna-Writeup",
     "404.md",
     "about.md",
     "CODE_OF_CONDUCT.md",
@@ -205,7 +205,6 @@
     "_site/2024-10-06.md",
     "2024-10-06.md",
     "_site/apa-itu-shell/Prueba/Prueba.md",
-    "_site/apa-itu-shell/Sin nombre/Prueba.md",
-    "_site/apa-itu-shell/Sin nombre/Sin título.md"
+    "_site/apa-itu-shell/Sin nombre/Prueba.md"
   ]
 }
