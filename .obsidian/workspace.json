@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/HTB-Heist_Writeup/2024-08-11-HTB-Heist-Writeup.md",
+                "file": "thanks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-11-HTB-Heist-Writeup"
+              "title": "thanks"
+            }
+          },
+          {
+            "id": "0e5ab64eb6a95462",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.5"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.5"
             }
           }
         ]
@@ -161,8 +173,15 @@
   },
   "active": "309c784b4605f23b",
   "lastOpenFiles": [
-    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
+    "lighthouse.png",
+    "README.md",
+    "index.md",
+    "CONTRIBUTING.md",
+    "about.md",
+    "CODE_OF_CONDUCT.md",
+    "404.md",
     "_posts/HTB-Heist_Writeup/2024-08-11-HTB-Heist-Writeup.md",
+    "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
     "_site/assets/img/Heist/Imagen4.png",
     "_site/assets/img/Heist/Imagen3.png",
     "_site/assets/img/Heist/Imagen2.png",
@@ -187,13 +206,7 @@
     "_site/Contral-Total-STDOUT-en-Linux",
     "_posts/Control Total Stdout en Linux",
     "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
-    "404.md",
-    "about.md",
-    "CODE_OF_CONDUCT.md",
-    "index.md",
     "thanks.md",
-    "README.md",
-    "CONTRIBUTING.md",
     "_posts/apa-itu-shell/2020-01-25-apa-itu-shell.md",
     "_posts/python-notes-from-Intro-to-machine-learning/2018-04-14-python-notes-from-Intro-to-machine-learning.md",
     "_posts/welcome-to-jekyll/2020-08-29-welcome-to-jekyll.md",
