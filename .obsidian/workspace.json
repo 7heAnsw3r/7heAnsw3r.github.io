@@ -13,24 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thanks.md",
+                "file": "_posts/HTB-JAB-Writeup/2024-15-11-HTB-Jab-Writeup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "thanks"
-            }
-          },
-          {
-            "id": "0e5ab64eb6a95462",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.5"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
+              "title": "2024-15-11-HTB-Jab-Writeup"
             }
           }
         ]
@@ -173,7 +161,24 @@
   },
   "active": "309c784b4605f23b",
   "lastOpenFiles": [
-    "lighthouse.png",
+    "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
+    "_posts/HTB-JAB-Writeup/2024-15-11-HTB-Jab-Writeup.md",
+    "_site/assets/img/Jab/Imagen9.png",
+    "_site/assets/img/Jab/Imagen8.png",
+    "_site/assets/img/Jab/Imagen7.png",
+    "_site/assets/img/Jab/Imagen6.png",
+    "_site/assets/img/Jab/Imagen5.png",
+    "_site/assets/img/Jab/Imagen4.png",
+    "_site/assets/img/Jab/Imagen3.png",
+    "_site/assets/img/Jab/Imagen21.png",
+    "_site/assets/img/Jab/Imagen20.png",
+    "_site/assets/img/Jab/Imagen2.png",
+    "_site/assets/img/Jab",
+    "assets/img/Jab",
+    "_site/HTB-Jab-Writeup/index.html",
+    "_site/HTB-Jab-Writeup",
+    "thanks.md",
+    "_posts/HTB-JAB-Writeup",
     "README.md",
     "index.md",
     "CONTRIBUTING.md",
@@ -182,31 +187,14 @@
     "404.md",
     "_posts/HTB-Heist_Writeup/2024-08-11-HTB-Heist-Writeup.md",
     "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
-    "_site/assets/img/Heist/Imagen4.png",
-    "_site/assets/img/Heist/Imagen3.png",
-    "_site/assets/img/Heist/Imagen2.png",
-    "_site/assets/img/Heist/Imagen1.png",
-    "assets/img/Heist/Imagen4.png",
-    "assets/img/Heist/Imagen3.png",
-    "assets/img/Heist/Imagen2.png",
-    "assets/img/Heist/Imagen1.png",
-    "_site/assets/img/Heist/Heist.png",
     "_site/assets/img/Heist",
-    "assets/img/Heist/Heist.png",
     "assets/img/Heist",
     "_site/HTB-Heist-Writeup/index.html",
     "_site/HTB-Heist-Writeup",
     "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
     "_posts/HTB-Heist_Writeup",
-    "_site/Contral-Total-STDOUT/index.html",
-    "_site/Contral-Total-STDOUT",
     "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
-    "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
-    "_site/Contral-Total-STDOUT-en-Linux/index.html",
-    "_site/Contral-Total-STDOUT-en-Linux",
-    "_posts/Control Total Stdout en Linux",
     "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
-    "thanks.md",
     "_posts/apa-itu-shell/2020-01-25-apa-itu-shell.md",
     "_posts/python-notes-from-Intro-to-machine-learning/2018-04-14-python-notes-from-Intro-to-machine-learning.md",
     "_posts/welcome-to-jekyll/2020-08-29-welcome-to-jekyll.md",
@@ -217,7 +205,6 @@
     "_posts/Prueba/2024-10-06-Prueba.md",
     "_site/2024-10-06.md",
     "2024-10-06.md",
-    "_site/apa-itu-shell/Prueba/Prueba.md",
-    "_site/apa-itu-shell/Sin nombre/Prueba.md"
+    "_site/apa-itu-shell/Prueba/Prueba.md"
   ]
 }
