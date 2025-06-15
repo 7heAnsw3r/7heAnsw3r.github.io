@@ -854,4 +854,9 @@ En este punto, vamos a utilizar **Chisel** para establecer un túnel y realizar 
 
 Esta máquina pertenece a **Hack The Box**. Si quieres resolverla por tu cuenta, aquí tienes el enlace directo: [Jab - Hack The Box](https://app.hackthebox.com/machines/Jab). ¡Buena suerte!
 
-<div style="width:100%;height:0;padding-bottom:91%;position:relative;"><iframe src="https://giphy.com/embed/RJaiws3GnVHcybdk0l" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/stickers/dance-rick-and-morty-chillfolio-RJaiws3GnVHcybdk0l">via GIPHY</a></p>
+<img src="https://media.giphy.com/media/RJaiws3GnVHcybdk0l/giphy.gif" 
+     alt="Rick and Morty dancing" 
+     width="100%" 
+     height="100%">
+
+<p><a href="https://giphy.com/stickers/dance-rick-and-morty-chillfolio-RJaiws3GnVHcybdk0l">via GIPHY</a></p>
