@@ -22,6 +22,26 @@
             }
           }
         ]
+      },
+      {
+        "id": "7c7ec6b56d2ed855",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0764e00c7aba205",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/HTB-Resolute-Writeup/2025-15-06-HTB-Resolute-Writeup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-15-06-HTB-Resolute-Writeup"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,40 +179,41 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "309c784b4605f23b",
+  "active": "d0764e00c7aba205",
   "lastOpenFiles": [
-    "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
     "_posts/HTB-JAB-Writeup/2024-15-11-HTB-Jab-Writeup.md",
-    "_site/assets/img/Jab/Imagen9.png",
-    "_site/assets/img/Jab/Imagen8.png",
-    "_site/assets/img/Jab/Imagen7.png",
-    "_site/assets/img/Jab/Imagen6.png",
-    "_site/assets/img/Jab/Imagen5.png",
-    "_site/assets/img/Jab/Imagen4.png",
-    "_site/assets/img/Jab/Imagen3.png",
-    "_site/assets/img/Jab/Imagen21.png",
-    "_site/assets/img/Jab/Imagen20.png",
-    "_site/assets/img/Jab/Imagen2.png",
-    "_site/assets/img/Jab",
-    "assets/img/Jab",
-    "_site/HTB-Jab-Writeup/index.html",
-    "_site/HTB-Jab-Writeup",
-    "thanks.md",
-    "_posts/HTB-JAB-Writeup",
-    "README.md",
-    "index.md",
-    "CONTRIBUTING.md",
+    "_posts/HTB-Resolute-Writeup/2025-15-06-HTB-Resolute-Writeup.md",
+    "_site/assets/img/Resolute/imagen9.png",
+    "_site/assets/img/Resolute/imagen8.png",
+    "_site/assets/img/Resolute/imagen7.png",
+    "_site/assets/img/Resolute/imagen6.png",
+    "_site/assets/img/Resolute/imagen5.png",
+    "_site/assets/img/Resolute/imagen4.png",
+    "_site/assets/img/Resolute/imagen3.png",
+    "_site/assets/img/Resolute/imagen22.png",
+    "_site/assets/img/Resolute/imagen21.png",
+    "_site/assets/img/Resolute/imagen20.png",
+    "_site/assets/img/Resolute/tmp",
+    "assets/img/Resolute/tmp",
+    "_site/assets/img/Resolute/tmp.zip",
+    "assets/img/Resolute/tmp.zip",
+    "_site/assets/img/Resolute",
+    "assets/img/Resolute",
+    "404.md",
     "about.md",
     "CODE_OF_CONDUCT.md",
-    "404.md",
+    "CONTRIBUTING.md",
+    "index.md",
+    "README.md",
+    "thanks.md",
+    "_site/HTB-Resolute-Writeup/index.html",
+    "_site/HTB-Resolute-Writeup",
+    "_posts/HTB-Resolute-Writeup",
+    "_posts/HTB-Sauna-Writeup/2024-20-10-HTB-Sauna-Writeup.md",
+    "_site/assets/img/Jab",
     "_posts/HTB-Heist_Writeup/2024-08-11-HTB-Heist-Writeup.md",
     "_posts/HTB-Freelancer-Writeup/2024-06-10-HTB-Freelancer-WriteUp.md",
-    "_site/assets/img/Heist",
-    "assets/img/Heist",
-    "_site/HTB-Heist-Writeup/index.html",
-    "_site/HTB-Heist-Writeup",
     "_posts/Control Total Stdout en Linux/2024-03-11-Contral-Total-STDOUT.md",
-    "_posts/HTB-Heist_Writeup",
     "_posts/Permisos-Archivos-Linux/2024-11-10-Permisos-Archivos-Linux.md",
     "_posts/HTB-Nibbles-Writeup/2024-11-10-HTB-Nibbles-Writeup.md",
     "_posts/apa-itu-shell/2020-01-25-apa-itu-shell.md",
@@ -204,7 +225,6 @@
     "_site/about.md",
     "_posts/Prueba/2024-10-06-Prueba.md",
     "_site/2024-10-06.md",
-    "2024-10-06.md",
-    "_site/apa-itu-shell/Prueba/Prueba.md"
+    "2024-10-06.md"
   ]
 }
