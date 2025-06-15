@@ -229,3 +229,4 @@ Con la contraseña del administrador ya modificada, utilizamos `impacket-psexec`
 <img src="https://media.giphy.com/media/u9293Xrizd0tO/giphy.gif" alt="Mr Robot GIF" width="100%" height="100%">
 
 <p><a href="https://giphy.com/gifs/mr-robot-showmax-u9293Xrizd0tO">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/u9293Xrizd0tO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/mr-robot-showmax-u9293Xrizd0tO">via GIPHY</a></p>
