@@ -1,12 +1,18 @@
 // Animation fade-in
 @keyframes fadein {
   0% {
-    opacity: 0.2;
+    opacity: 0;
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 1;
   }
+}
+
+// Blinking cursor
+@keyframes blink-cursor {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 // Animation blur

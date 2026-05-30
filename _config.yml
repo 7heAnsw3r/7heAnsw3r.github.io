@@ -1,9 +1,9 @@
 # Site settings
 title: 7heAnsw3r
 description: >-
-  Join me on an exciting journey into the world of cybersecurity and ethical hacking.
-  Dive into detailed write-ups, explore vulnerabilities, discover zero-days, and share real-world experiences.
-  Gain hands-on insights and keep up with the latest in hacking and security at <a href="https://7heansw3r.github.io" target="_blank" rel="noopener">7heAnsw3r</a>.
+  Penetration testing research, Active Directory exploitation, malware development and offensive tool engineering.
+  Write-ups, TTPs and technical deep-dives by Anthony Contreras — CPTS | CAPE | eJPT | HTB ProLabs | MalDev.
+  Read more at <a href="https://7heansw3r.github.io" target="_blank" rel="noopener">7heAnsw3r</a>.
 lang: en-US
 timezone: America/Guayaquil
 image: assets/img/Avatar_hacker.png
@@ -14,7 +14,7 @@ mode: dark
 author: 
   name: 7heAnsw3r
   bio: >-
-    Cybersecurity enthusiast 🔐 | eJPT certified 🎓 | CPTS in progress 🛡️ | Pursuing Cisco's Ethical Hacker cert 🥷 | Sharing write-ups, vulnerabilities & insights on hacking 🚀
+    Penetration Tester · CPTS · CAPE · eJPT · MalDev · HTB ProLabs: Offshore, Wutai, Ifrit · Building offensive tooling for x86_64 & ARM
   username: 7heAnsw3r
   github: 7heAnsw3r
   twitter: TheAnsw3r
@@ -60,7 +60,7 @@ jekyll_compose:
     description:
 
 # Homepage limit posts
-number_of_posts: 5
+number_of_posts: 8
 
 # Build settings
 # theme: klise

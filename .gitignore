@@ -4,4 +4,5 @@ _site/
 .jekyll-metadata
 _drafts
 klise-*.gem
-Gemfile.lock
+Gemfile.lockvendor/
+.obsidian/
