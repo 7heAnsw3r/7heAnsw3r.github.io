@@ -24,7 +24,7 @@ I focus on Active Directory exploitation, malware development, and building offe
 | CAPE — Certified AD Penetration Expert | HackTheBox | ✅ |
 | eJPT — Junior Penetration Tester | eLearnSecurity | ✅ |
 | Cisco Ethical Hacker | Cisco | ✅ |
-| Malware Development Certifications | — | ✅ |
+| Malware Development Certifications | Maldev | ✅ |
 
 ---
 
