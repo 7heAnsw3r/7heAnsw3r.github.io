@@ -22,7 +22,7 @@ I focus on Active Directory exploitation, malware development, and building offe
 |---|---|---|
 | CPTS — Certified Penetration Testing Specialist | HackTheBox | ✅ |
 | CAPE — Certified AD Penetration Expert | HackTheBox | ✅ |
-| eJPT — Junior Penetration Tester | eLearnSecurity | ✅ (91%) |
+| eJPT — Junior Penetration Tester | eLearnSecurity | ✅ |
 | Cisco Ethical Hacker | Cisco | ✅ |
 | Malware Development Certifications | — | ✅ |
 
