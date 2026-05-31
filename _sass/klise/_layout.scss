@@ -204,7 +204,7 @@
 
 // Terminal window hero
 .terminal-window {
-  border: 1px solid $light;
+  border: 1px solid #c8c8c8;
   border-radius: 6px;
   overflow: hidden;
   margin: 4rem 0 0;
@@ -212,7 +212,8 @@
 }
 
 .terminal-titlebar {
-  background: $light;
+  background: #e0e0e0;
+  border-bottom: 1px solid #c8c8c8;
   padding: 8px 14px;
   display: flex;
   align-items: center;
