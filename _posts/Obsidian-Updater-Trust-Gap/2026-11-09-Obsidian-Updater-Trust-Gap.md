@@ -21,6 +21,11 @@ image: /assets/img/ObsMacos001/trust-gap-diagram.png
 
 Electron apps that ship their own update mechanism are, in effect, running a second trust system next to the one macOS/Windows/Linux already give you via code signing. If that second system only checks integrity at the front door (download) and not at the door it actually matters (load and execute), the front-door check is theater. Anyone who can already write to the app's own data directory — malware running as you, or a compromised/malicious community plugin, which in Obsidian runs with full Node.js access by design — can hand the real, signed, notarized Obsidian binary a package it never downloaded, never verified, and will run anyway.
 
+<figure>
+<img src="/assets/img/ObsMacos001/trust-gap-diagram.png" alt="Flow diagram: macOS launches Obsidian and Gatekeeper verifies the binary signature; the signed shim runs inside the bundle; the shim looks for obsidian-*.asar files in userData trusting only the filename; require() loads and executes that file without verifying hash or signature; arbitrary code runs inside the process without Gatekeeper ever knowing. A dashed red line marks where the operating system's cryptographic control ends.">
+<figcaption>Fig 1. Where Gatekeeper's control ends and Obsidian's own, unverified decision begins.</figcaption>
+</figure>
+
 ## The defect
 
 Obsidian's updater has two relevant functions in the shim bundled inside `Resources/app.asar`:
@@ -32,7 +37,7 @@ The integrity control lives entirely in `downloadUpdate()` — the network path.
 
 <figure>
 <img src="/assets/img/ObsMacos001/05-main-js-loadapp.png" alt="loadApp() function from Obsidian's main.js, showing require() with no integrity check">
-<figcaption>Fig 1. loadApp(), extracted straight from the shipped main.js — require() and nothing else.</figcaption>
+<figcaption>Fig 2. loadApp(), extracted straight from the shipped main.js — require() and nothing else.</figcaption>
 </figure>
 
 It's also worth noting Electron ships native protection for exactly this scenario — the `OnlyLoadAppFromAsar` and `EnableEmbeddedAsarIntegrityValidation` fuses. Checked with the official tooling:
@@ -50,7 +55,7 @@ Neither is enabled. Obsidian's own updater logic and Electron's native equivalen
 
 <figure>
 <img src="/assets/img/ObsMacos001/02-electron-fuses.png" alt="Electron fuses read via the official @electron/fuses CLI, showing OnlyLoadAppFromAsar and EnableEmbeddedAsarIntegrityValidation disabled">
-<figcaption>Fig 2. Electron's own fuses, read with the official @electron/fuses CLI — anyone can reproduce this against their own install.</figcaption>
+<figcaption>Fig 3. Electron's own fuses, read with the official @electron/fuses CLI — anyone can reproduce this against their own install.</figcaption>
 </figure>
 
 ## Reproducing it
@@ -82,21 +87,21 @@ Loaded updated app package .../obsidian-99.99.99.asar
 
 <figure>
 <img src="/assets/img/ObsMacos001/08-log-grep-both-loads.png" alt="grep over obsidian.log showing the crafted obsidian-99.99.99.asar loaded, then the legitimate obsidian-1.15.0.asar loaded again after cleanup">
-<figcaption>Fig 3. obsidian.log loading the crafted package, then the legitimate one again after restoration.</figcaption>
+<figcaption>Fig 4. obsidian.log loading the crafted package, then the legitimate one again after restoration.</figcaption>
 </figure>
 
 And the marker file, written from inside the real, running Obsidian process — its PID matched `pgrep`'s output for the actual app at that moment:
 
 <figure>
 <img src="/assets/img/ObsMacos001/07-poc-execution-marker-pid.png" alt="Marker file content with the executed timestamp and PID, matching pgrep output for the real running Obsidian process">
-<figcaption>Fig 4. Marker written from inside the real process — pid in the marker matches pgrep's output for the live Obsidian process.</figcaption>
+<figcaption>Fig 5. Marker written from inside the real process — pid in the marker matches pgrep's output for the live Obsidian process.</figcaption>
 </figure>
 
 Cleanup is just: quit, delete the crafted `.asar`, relaunch, confirm the log goes back to loading the legitimate version. The original package's hash never changes throughout.
 
 <figure>
 <img src="/assets/img/ObsMacos001/09-restoration-confirmed.png" alt="Terminal output confirming Obsidian reloaded the legitimate obsidian-1.15.0.asar after cleanup, with the app left closed as it was found">
-<figcaption>Fig 5. Restoration confirmed — legitimate package reloaded, app left closed like it was found.</figcaption>
+<figcaption>Fig 6. Restoration confirmed — legitimate package reloaded, app left closed like it was found.</figcaption>
 </figure>
 
 ## What this actually buys an attacker
