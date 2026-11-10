@@ -40,7 +40,7 @@ The integrity control lives entirely in `downloadUpdate()` — the network path.
 <figcaption>Fig 2. loadApp(), extracted straight from the shipped main.js — require() and nothing else.</figcaption>
 </figure>
 
-It's also worth noting Electron ships native protection for exactly this scenario — the `OnlyLoadAppFromAsar` and `EnableEmbeddedAsarIntegrityValidation` fuses. Checked with the official tooling:
+It's also worth noting Electron ships its own integrity mechanism for the app's embedded bundle — the `OnlyLoadAppFromAsar` and `EnableEmbeddedAsarIntegrityValidation` fuses, which protect `app.asar` as shipped, separate from whatever an app's own code does with files it manages itself. Checked with the official tooling:
 
 ```bash
 npx --yes @electron/fuses read --app "/Applications/Obsidian.app"
@@ -51,7 +51,7 @@ OnlyLoadAppFromAsar is Disabled
 EnableEmbeddedAsarIntegrityValidation is Disabled
 ```
 
-Neither is enabled. Obsidian's own updater logic and Electron's native equivalent both leave this door open.
+Neither is enabled, which is a separate hardening gap worth noting — but to be precise, enabling them wouldn't fix OBS-MACOS-001 on its own: they cover the embedded `app.asar`, not the externally-cached package Obsidian's own updater `require()`s from userData. More on that distinction in the fix section below.
 
 <figure>
 <img src="/assets/img/ObsMacos001/02-electron-fuses.png" alt="Electron fuses read via the official @electron/fuses CLI, showing OnlyLoadAppFromAsar and EnableEmbeddedAsarIntegrityValidation disabled">
@@ -131,7 +131,7 @@ asar main.js executed at 2026-11-10T00:24:41.542Z pid=17846
 
 Same PID as the live process at that moment. The plugin was gone; the code it dropped wasn't.
 
-This is also where "users are responsible for the plugins they install" stops being a complete answer. That principle assumes uninstalling a bad plugin removes the risk it introduced — notice it misbehaving, pull it, move on. Here it doesn't. The payload it dropped keeps loading and executing on every future launch with zero plugin, malicious or otherwise, involved at all. Plugin vetting is necessary; it was never going to be sufficient against this specific bug, because the thing re-loading the payload isn't the plugin system — it's Obsidian's own updater, and it doesn't check who put a file in `userData` before trusting it.
+To be fair to "users are responsible for the plugins they install": a plugin with arbitrary code execution could already leave other persistent damage behind — drop a LaunchAgent, modify other files, whatever. Uninstalling one was never a complete guarantee that every effect is gone. What this specific mechanism adds is where the persistence lives afterward: not as a separate, discoverable artifact somewhere on disk, but re-loaded on every launch by Obsidian's own updater, inside Obsidian's own signed process, with nothing in the plugin system involved once the plugin is gone. That's a meaningfully worse place for it to hide than most of what a removed plugin could otherwise leave behind.
 
 ## Disclosure timeline
 
@@ -158,7 +158,7 @@ That's a coherent, defensible position, and I want to be fair to it: Obsidian en
 
 Nobody gets local code execution *because of* this bug. They get it from something else entirely — a phishing payload, a malicious npm package three dependencies deep, a compromised plugin from any one of a dozen ecosystems, an unrelated local privilege issue. That part is already somebody else's CVE, somebody else's incident. What this bug determines is what happens *next*: once that first foothold exists, does the attacker's code have to keep running as its own, flaggable, unsigned process — or can it disappear into a binary your EDR already trusts?
 
-That's the actual severity question, and it has nothing to do with how the attacker got in. A SOC that allowlists or de-prioritizes activity from a signed, notarized Obsidian.app isn't being careless — that's a completely reasonable baseline. This bug is exactly what breaks that baseline quietly: the process launching network connections, spawning children, reading files is still, as far as every log and every EDR heuristic is concerned, *Obsidian*. No new binary drops. No signature mismatch. No parent-child anomaly pointing at an unsigned blob. The correlation a SOC depends on to connect "something bad happened" to "here's the artifact that did it" just isn't there.
+That's the actual severity question, and it has nothing to do with how the attacker got in. A SOC that allowlists or de-prioritizes activity from a signed, notarized Obsidian.app isn't being careless — that's a completely reasonable baseline. This bug is what breaks that baseline quietly: the process launching network connections, spawning children, reading files is still, by every standard signal (signed parent binary, no new executable on disk, no signature mismatch), *Obsidian*. I haven't run this against a real EDR product to confirm it's actually missed in practice — that's an inference from how code-signing-based trust models work, not a tested result. But the artifact a SOC would normally pivot on to connect "something bad happened" to "here's what did it" — an unsigned binary, a signature mismatch, a new process image — genuinely isn't there to find.
 
 ## Detection and defense
 
@@ -183,7 +183,9 @@ None of this requires Obsidian to ship a fix. It's the kind of coverage that sho
 
 ## What should actually change
 
-Move the hash/signature check from `downloadUpdate()` to `loadApp()` — verify the package that's about to be `require()`'d, not just the one that was downloaded. That's the whole fix. Enabling Electron's native `OnlyLoadAppFromAsar` / `EnableEmbeddedAsarIntegrityValidation` fuses would help too, independent of the custom updater logic.
+Move the hash/signature check from `downloadUpdate()` to `loadApp()` — verify the package that's about to be `require()`'d, not just the one that was downloaded. That's the actual fix for this bug.
+
+Enabling Electron's native `OnlyLoadAppFromAsar` / `EnableEmbeddedAsarIntegrityValidation` fuses is worth doing regardless, but I want to be precise about what it would and wouldn't cover: based on [Electron's own docs](https://github.com/electron/electron/blob/main/docs/tutorial/asar-integrity.md), that mechanism validates the app's *embedded* `app.asar` (the one baked in at build time, hash computed against that specific path) — not an externally-cached package an app's own code chooses to `require()` from a custom location at runtime, which is what Obsidian's updater does. Enabling the fuses hardens a separate part of the attack surface (someone tampering with the shipped bundle itself); it doesn't substitute for the loader re-verifying what it's about to execute.
 
 ## Closing
 
