@@ -179,7 +179,7 @@ None of this requires Obsidian to ship a fix. It's the kind of coverage that sho
 
 ## Proposed severity
 
-`AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H` — High under CVSS 3.1, with `UI:N` rather than `UI:R` on the reasoning that a restart is a normal lifecycle event, not user interaction directed at the attack (the same argument Trail of Bits made for CVE-2025-55305). CWE-345 (Insufficient Verification of Data Authenticity) and/or CWE-494 (Download of Code Without Integrity Check) both apply.
+`AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H` — High under CVSS 3.1, with `UI:N` rather than `UI:R` on the reasoning that a restart is a normal lifecycle event, not user interaction directed at the attack (the same argument Trail of Bits made for CVE-2025-55305). CWE-829 (Inclusion of Functionality from Untrusted Control Sphere — the same CWE NVD used for CVE-2025-55305) and CWE-494 (Download of Code Without Integrity Check) both apply.
 
 ## What should actually change
 
