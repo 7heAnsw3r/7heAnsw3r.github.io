@@ -118,7 +118,18 @@ OBS-MACOS-001 advanced PoC — 2026-11-07T19:52:14.780Z pid=89101
 
 `fs` wrote and read back a file. `child_process` ran `whoami`/`uname -a` and got the real output. `net` opened a loopback connection that a listener I controlled actually received. All three, under the PID of the real, running Obsidian process. Username and hostname redacted above; everything else is unmodified output.
 
-The realistic delivery vector isn't "malware that already has full code execution" — it's a malicious or compromised community plugin, which in Obsidian already runs with full Node.js access (`contextIsolation: false`, `nodeIntegration: true`, confirmed on every window I checked, not just the main one). A plugin that wants persistence surviving its own removal, or that wants to defeat code-signing assumptions, gets exactly that for free here.
+The realistic delivery vector isn't "malware that already has full code execution" — it's a malicious or compromised community plugin, which in Obsidian already runs with full Node.js access (`contextIsolation: false`, `nodeIntegration: true`, confirmed on every window I checked, not just the main one).
+
+I didn't want to just assert the "survives its own removal" part, so I tested it directly: a benign test plugin, in an isolated profile, whose only job was to drop the crafted asar into `userData` on load. I let it run once, then deleted the plugin's entire directory and removed it from the enabled list — a real, complete uninstall, nothing left on disk. On the next launch, with the plugin gone entirely:
+
+```text
+2026-11-10 00:24:41 Loaded updated app package .../obsidian-99.99.99.asar
+```
+```text
+asar main.js executed at 2026-11-10T00:24:41.542Z pid=17846
+```
+
+Same PID as the live process at that moment. The plugin was gone; the code it dropped wasn't.
 
 ## Disclosure timeline
 
