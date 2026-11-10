@@ -1,5 +1,5 @@
 ---
-title: "OBS-MACOS-001: Obsidian Desktop's Updater Doesn't Re-Verify Packages at Launch"
+title: "Persistent Code Execution Inside a Signed, Notarized macOS App — No Malware Needed, Just a Filename"
 date: 2026-11-09
 tags:
   - electron
@@ -152,9 +152,9 @@ To be fair to "users are responsible for the plugins they install": a plugin wit
 
 That's a coherent, defensible position, and I want to be fair to it: Obsidian engaged seriously, asked for a retest, read the follow-ups, and gave a real technical reason instead of a form rejection. I just don't think "requires local write access" should be disqualifying on its own.
 
-## Where I disagree
+## Red team relevance
 
-"Requires code already running locally" is true, and it's also not the point. Initial access and persistence are different problems, and this bug lives entirely in the second one.
+Severity debates aside, it's worth walking through what this is actually useful for — and against, which is the next section. Initial access and persistence are different problems, and this bug lives entirely in the second one.
 
 Nobody gets local code execution *because of* this bug. They get it from something else entirely — a phishing payload, a malicious npm package three dependencies deep, a compromised plugin from any one of a dozen ecosystems, an unrelated local privilege issue. That part is already somebody else's CVE, somebody else's incident. What this bug determines is what happens *next*: once that first foothold exists, does the attacker's code have to keep running as its own, flaggable, unsigned process — or can it disappear into a binary your EDR already trusts?
 
