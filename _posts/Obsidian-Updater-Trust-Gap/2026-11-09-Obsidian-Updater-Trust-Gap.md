@@ -131,6 +131,8 @@ asar main.js executed at 2026-11-10T00:24:41.542Z pid=17846
 
 Same PID as the live process at that moment. The plugin was gone; the code it dropped wasn't.
 
+This is also where "users are responsible for the plugins they install" stops being a complete answer. That principle assumes uninstalling a bad plugin removes the risk it introduced — notice it misbehaving, pull it, move on. Here it doesn't. The payload it dropped keeps loading and executing on every future launch with zero plugin, malicious or otherwise, involved at all. Plugin vetting is necessary; it was never going to be sufficient against this specific bug, because the thing re-loading the payload isn't the plugin system — it's Obsidian's own updater, and it doesn't check who put a file in `userData` before trusting it.
+
 ## Disclosure timeline
 
 | Date | Event |
