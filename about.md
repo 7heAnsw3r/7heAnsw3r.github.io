@@ -2,11 +2,24 @@
 title: Anthony Contreras
 permalink: /about/
 layout: page
+wide: true
 excerpt: "Penetration Tester — CPTS, CAPE, eJPT, MalDev certifications. HTB ProLabs: Offshore, Wutai, Ifrit. Building offensive tooling for x86_64 and ARM. Computer Science Engineering student at EPN, Ecuador."
 comments: false
 ---
 
----
+<div class="me-hero">
+  <img class="me-avatar" src="/assets/img/Avatar_hacker.png" alt="7heAnsw3r avatar">
+  <div class="me-hero-text">
+    <div class="me-name">Anthony Contreras</div>
+    <div class="me-handle">@7heAnsw3r · Penetration Tester</div>
+    <div class="me-links">
+      <a href="https://github.com/7heAnsw3r" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/4n7hony" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/TheAnsw3r" target="_blank" rel="noopener">Twitter / X</a>
+      <a href="https://app.hackthebox.com/profile/1534609" target="_blank" rel="noopener">Hack The Box</a>
+    </div>
+  </div>
+</div>
 
 ## whoami
 

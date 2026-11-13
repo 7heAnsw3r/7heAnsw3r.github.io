@@ -1,10 +1,10 @@
 // Fonts preferences
 $sans-family: Roboto, sans-serif;
-$mono-family: Consolas, monospace;
+$mono-family: "JetBrains Mono", Consolas, monospace;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.85;
+$base-line-height: 1.7;
 
 // Font weight
 // $light-weight: 300; // uncomment if necessary
@@ -24,7 +24,7 @@ $gray: #6b7886;
 $white: #fff;
 
 // Dark Colors — black & green accent
-$dark-text-base-color: #a8a8a8;
+$dark-text-base-color: #c8c8c8;
 $dark-text-link-blue: #00e676;
 $dark-text-link-blue-active: #00b85a;
 
@@ -32,7 +32,7 @@ $dark-black: #0d0d0d;
 $dark-white: #e8e8e8;
 $dark-light: #1a1a1a;
 $dark-smoke: #2a2a2a;
-$dark-gray: #555555;
+$dark-gray: #8a8a8a;
 
 // Width of the content area
 $wide-size: 890px;
@@ -60,4 +60,4 @@ $on-widescreen: 1152px;
 
 // Import sass files
 @import "klise/fonts", "klise/base", "klise/layout", "klise/post",
-  "klise/miscellaneous", "klise/syntax", "klise/dark";
+  "klise/miscellaneous", "klise/syntax", "klise/dark", "klise/custom";

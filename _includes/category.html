@@ -1,0 +1,7 @@
+{%- assign tl = include.post.tags | join: ' ' | downcase | remove: '#' -%}
+{%- assign cat = 'linux' -%}
+{%- if tl contains 'activedirectory' or tl contains 'active-directory' -%}{%- assign cat = 'ad' -%}
+{%- elsif tl contains 'maldev' or tl contains 'evasion' -%}{%- assign cat = 'maldev' -%}
+{%- elsif tl contains 'electron' or tl contains 'reversing' -%}{%- assign cat = 'research' -%}
+{%- elsif tl contains 'web' -%}{%- assign cat = 'web' -%}
+{%- endif -%}

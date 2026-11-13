@@ -30,6 +30,7 @@ layout: compress
 
   {% include navbar.html %}
   <div class="wrapper post">
+    <div class="post-layout">
     <main class="page-content" aria-label="Content">
       <article itemscope itemtype="https://schema.org/BlogPosting">
 
@@ -79,6 +80,11 @@ layout: compress
       {% endif %}
 
     </main>
+    <aside class="toc" id="toc" aria-label="Table of contents" hidden>
+      <div class="toc-title">// contents</div>
+      <ul class="toc-list" id="toc-list"></ul>
+    </aside>
+    </div>
 
     {% if page.modified %}
       <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}</small>
@@ -89,6 +95,36 @@ layout: compress
 
     {% include footer.html %}
   </div>
+  <script>
+    (function () {
+      var root = document.querySelector('.page-content[itemprop="articleBody"]');
+      if (!root) return;
+      var hs = root.querySelectorAll('h2, h3');
+      if (hs.length < 3) return;
+      var list = document.getElementById('toc-list'), links = {};
+      hs.forEach(function (h, i) {
+        if (!h.id) h.id = 'sec-' + i;
+        var li = document.createElement('li');
+        li.className = 'toc-' + h.tagName.toLowerCase();
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.replace(/^#\s*/, '');
+        li.appendChild(a); list.appendChild(li); links[h.id] = a;
+      });
+      document.getElementById('toc').hidden = false;
+      if (!('IntersectionObserver' in window)) return;
+      var cur;
+      var obs = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) {
+            if (cur) cur.classList.remove('active');
+            cur = links[e.target.id]; cur.classList.add('active');
+          }
+        });
+      }, { rootMargin: '0px 0px -75% 0px' });
+      hs.forEach(function (h) { obs.observe(h); });
+    })();
+  </script>
 </body>
 
 </html>
