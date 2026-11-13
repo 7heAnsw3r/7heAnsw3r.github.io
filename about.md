@@ -74,12 +74,3 @@ Sliver C2, Ligolo-ng tunneling, lateral movement via WMI/WinRM/DCOM/SMB.
 
 `Impacket` `CrackMapExec` `BloodHound` `Rubeus` `Mimikatz` `Sliver` `Metasploit` `Burp Suite`  
 `Nmap` `Responder` `Hashcat` `Ghidra` `GDB/pwndbg` `Python` `C/C++` `Bash`
-
----
-
-## Networks
-
-- **GitHub:** [7heAnsw3r](https://github.com/7heAnsw3r)
-- **LinkedIn:** [Anthony Contreras](https://linkedin.com/in/4n7hony)
-- **Twitter/X:** [@TheAnsw3r](https://twitter.com/TheAnsw3r)
-- **Hack The Box:** [TheAnsw3r](https://app.hackthebox.com/profile/1534609)
