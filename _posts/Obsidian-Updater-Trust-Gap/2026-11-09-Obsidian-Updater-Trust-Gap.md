@@ -4,6 +4,7 @@ date: 2026-11-09
 tags:
   - electron
   - macos
+  - windows
   - reversing
   - disclosure
 description: Obsidian Desktop verifies the hash and signature of its update package only at download time. At every startup, it loads whatever obsidian-*.asar file it finds in userData, by filename alone, with no re-check. Confirmed with a working PoC. Obsidian's call — not a vulnerability.
@@ -132,6 +133,27 @@ asar main.js executed at 2026-11-10T00:24:41.542Z pid=17846
 Same PID as the live process at that moment. The plugin was gone; the code it dropped wasn't.
 
 To be fair to "users are responsible for the plugins they install": a plugin with arbitrary code execution could already leave other persistent damage behind — drop a LaunchAgent, modify other files, whatever. Uninstalling one was never a complete guarantee that every effect is gone. What this specific mechanism adds is where the persistence lives afterward: not as a separate, discoverable artifact somewhere on disk, but re-loaded on every launch by Obsidian's own updater, inside Obsidian's own signed process, with nothing in the plugin system involved once the plugin is gone. That's a meaningfully worse place for it to hide than most of what a removed plugin could otherwise leave behind.
+
+## Update (2026-11-13): confirmed on Windows
+
+Everything above was tested on macOS. The defect itself — `loadApp()`/`downloadUpdate()` in the shim bundled inside `app.asar` — is plain, platform-agnostic JavaScript, with no OS-specific branch doing extra verification. That predicts the bug isn't macOS-specific, so I reproduced the full persistence-after-uninstall test (the same one described above: a benign test plugin, isolated profile, real and complete removal of the plugin before the next launch) against the official Windows build.
+
+Setup: Obsidian 1.15.1 for Windows, official installer, isolated `--user-data-dir` profile — the real install was never touched. Same test plugin pattern, same crafted `obsidian-99.99.99.asar`, same sequence: load once (plugin drops the package), delete the plugin's directory entirely and empty `community-plugins.json`, relaunch.
+
+```text
+2026-11-13 04:09:35 Loaded updated app C:\ObsTest\profile\obsidian-99.99.99.asar
+```
+
+With the plugin already gone from disk. The marker it left behind carried `pid:25140` — matched independently against `Get-Process Obsidian` (the main process, one second ahead of its renderer/GPU/utility children) and visually confirmed in Task Manager:
+
+<figure>
+<img src="/assets/img/ObsMacos001/win-pid-correlation.png" alt="PowerShell terminal showing the marker file's pid matching Get-Process output for the live Obsidian.exe main process, with child renderer/GPU/utility processes started one second later">
+<figcaption>Fig 7. Same PID, independently confirmed: the marker left by the crafted package matches the live Obsidian.exe process on Windows.</figcaption>
+</figure>
+
+Same result, same mechanism, different OS. There's no Gatekeeper/notarization equivalent doing extra work here either way — on both platforms, the only thing standing between "verified update" and "arbitrary code in the real process" was ever the filename.
+
+I don't have a Linux machine to run the live test on, but I checked the one thing that doesn't require one: the official Linux build's shim. `tar -xzf` on the published `obsidian-1.15.1.tar.gz` needs no emulation, and the `main.js` inside `resources/app.asar` is **byte-for-byte identical** to the macOS copy already tested — same SHA-256, zero-line diff. Same code means the live result should be the same too; that part just isn't independently run and confirmed yet, unlike macOS and Windows.
 
 ## Disclosure timeline
 
