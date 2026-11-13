@@ -1,5 +1,5 @@
 ---
-title: "Persistent Code Execution Inside a Signed, Notarized macOS App — No Malware Needed, Just a Filename"
+title: "Persistent Code Execution Inside a Signed Desktop App — Cross-Platform, No Malware Needed, Just a Filename"
 date: 2026-11-09
 tags:
   - electron
@@ -154,6 +154,16 @@ With the plugin already gone from disk. The marker it left behind carried `pid:2
 Same result, same mechanism, different OS. There's no Gatekeeper/notarization equivalent doing extra work here either way — on both platforms, the only thing standing between "verified update" and "arbitrary code in the real process" was ever the filename.
 
 I don't have a Linux machine to run the live test on, but I checked the one thing that doesn't require one: the official Linux build's shim. `tar -xzf` on the published `obsidian-1.15.1.tar.gz` needs no emulation, and the `main.js` inside `resources/app.asar` is **byte-for-byte identical** to the macOS copy already tested — same SHA-256, zero-line diff. Same code means the live result should be the same too; that part just isn't independently run and confirmed yet, unlike macOS and Windows.
+
+## Testing timeline
+
+| Date | Phase | Platform | Result |
+|---|---|---|---|
+| 2026-11-04 – 05 | Initial PoC | macOS, Obsidian 1.12.7 → retested on 1.15.0 | Crafted `.asar` loaded and executed by the real, running app; legitimate package's hash untouched |
+| 2026-11-07 | Advanced PoC | macOS | Confirmed real `fs`/`child_process`/`net` access from inside the loaded process, with inert test values only |
+| 2026-11-09 – 10 | Persistence-after-uninstall | macOS | Crafted package, delivered by a test plugin, survived the plugin's full removal and loaded again on the next launch |
+| 2026-11-12 – 13 | Live PoC | Windows (1.15.1) | Same persistence-after-uninstall result reproduced on the official Windows build, PID-matched end to end |
+| 2026-11-13 | Static analysis | Linux (1.15.1) | Shim `main.js` confirmed byte-for-byte identical (SHA-256 match) to macOS/Windows — same code; live execution not run, no Linux environment available |
 
 ## Disclosure timeline
 
