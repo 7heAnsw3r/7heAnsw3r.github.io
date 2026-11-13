@@ -105,6 +105,31 @@ Cleanup is just: quit, delete the crafted `.asar`, relaunch, confirm the log goe
 <figcaption>Fig 6. Restoration confirmed — legitimate package reloaded, app left closed like it was found.</figcaption>
 </figure>
 
+## Requirements: what an attacker actually needs
+
+This is the point Obsidian's response turns on, so it's worth stating plainly — both what the bug needs and what it doesn't.
+
+**What it needs**
+
+1. **Code already running as the user — or a plugin that does.** Something has to drop one file. A process running as that user can; so can a community plugin, since those run with full Node.js access by design.
+2. **Write access to Obsidian's `userData` directory** (`~/Library/Application Support/obsidian/` on macOS, the equivalent per-user directory on Windows and Linux). It belongs to the user and is writable by default.
+3. **A launch.** The package loads the next time Obsidian starts — a normal lifecycle event, not an action directed at the attack.
+
+**What it doesn't need**
+
+- Administrator/root rights. On macOS the directory is owned by the current user, and nothing in the PoC touched anything privileged.
+- Modifying the signed application. The binary on disk is never touched, so its signature stays valid.
+- A valid hash or signature on the payload. The version is read from the filename and nothing else is checked.
+- Any further interaction once the foothold exists.
+
+**What it doesn't give you**
+
+- Initial access. There's no remote vector here; the attacker needs a foothold first.
+- Privilege escalation. The injected code runs with the same rights the user already has.
+- A free pass through the plugin route. That vector requires the user to have turned off Restricted Mode and installed the plugin — exactly where Obsidian's warnings apply.
+
+That's the profile of a persistence and defense-evasion bug, not an initial-access one. The useful question isn't "can an attacker get in this way" (they can't), but "once they're in, what does the foothold get to hide behind afterward."
+
 ## What this actually buys an attacker
 
 I'm deliberately not detailing the full capability chain here. The short version: once arbitrary code runs inside Obsidian's main Electron process, it has the same Node.js access the app itself has — no sandbox, no capability restriction specific to this code path. That's enough to read and write anything the OS user can reach, run arbitrary commands, and reach the network. I'm not publishing the script that proves it — but I did run it, against the real process, with inert test values only:
